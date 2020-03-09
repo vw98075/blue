@@ -1,0 +1,11 @@
+version: '2'
+services:
+  blue-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/blue/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=blue
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
