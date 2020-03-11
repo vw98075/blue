@@ -1,4 +1,4 @@
-package com.vw.bluenile.scrabblesolverservice.service;
+package com.vw.blue.scrabblesolverservice.service;
 
 import org.springframework.context.ApplicationEvent;
 

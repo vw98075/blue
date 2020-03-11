@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f4fd830-7226-42fa-a817-ee224a8fccf9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vw/blue/scrabblesolverservice/service/WordDataPopulationEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vw/blue/scrabblesolverservice/web/rest/WordResourceWordSearchIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vw/blue/scrabblesolverservice/BlueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vw/blue/scrabblesolverservice/BlueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vw/blue/scrabblesolverservice/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vw/blue/scrabblesolverservice/config/CacheConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/layout/menus/entities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/layout/menus/entities.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/shared/reducers/index.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YuNAyi5Nl3pgj1QiW8WGemWpsL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vw.blue.scrabblesolverservice.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WordResourceIT.findWordsOnTrie">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordResourceIT.InOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vw.blue.scrabblesolverservice.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vw.blue.scrabblesolverservice.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.vw.blue.scrabblesolverservice.web.rest.WordResourceIT" />
+      <option name="METHOD_NAME" value="InOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordResourceIT.createWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vw.blue.scrabblesolverservice.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vw.blue.scrabblesolverservice.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.vw.blue.scrabblesolverservice.web.rest.WordResourceIT" />
+      <option name="METHOD_NAME" value="createWord" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordResourceIT.createWordWithExistingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vw.blue.scrabblesolverservice.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vw.blue.scrabblesolverservice.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.vw.blue.scrabblesolverservice.web.rest.WordResourceIT" />
+      <option name="METHOD_NAME" value="createWordWithExistingId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordResourceIT.findWordsOnTrie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vw.blue.scrabblesolverservice.web.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vw.blue.scrabblesolverservice.web.rest" />
+      <option name="MAIN_CLASS_NAME" value="com.vw.blue.scrabblesolverservice.web.rest.WordResourceIT" />
+      <option name="METHOD_NAME" value="findWordsOnTrie" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WordResourceIT.findWordsOnTrie" />
+        <item itemvalue="JUnit.WordResourceIT.InOut" />
+        <item itemvalue="JUnit.WordResourceIT.createWordWithExistingId" />
+        <item itemvalue="JUnit.WordResourceIT.createWord" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f4fd830-7226-42fa-a817-ee224a8fccf9" name="Default Changelist" comment="" />
+      <created>1583788379637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583788379637</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="319" width="376" height="558" key="#com.intellij.ide.util.MemberChooser" timestamp="1583796716424">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="768" y="319" width="376" height="558" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1583796716424" />
+    <state x="743" y="318" width="426" height="559" key="FileChooserDialogImpl" timestamp="1583879862088">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="743" y="318" width="426" height="559" key="FileChooserDialogImpl/0.0.1920.1200@0.0.1920.1200" timestamp="1583879862088" />
+    <state width="1874" height="394" key="GridCell.Tab.0.bottom" timestamp="1583818782852">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1874" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1583818782852" />
+    <state width="1874" height="394" key="GridCell.Tab.0.center" timestamp="1583818782852">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1874" height="394" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1583818782852" />
+    <state width="1874" height="394" key="GridCell.Tab.0.left" timestamp="1583818782851">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1874" height="394" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1583818782851" />
+    <state width="1874" height="394" key="GridCell.Tab.0.right" timestamp="1583818782852">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1874" height="394" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1583818782852" />
+    <state x="443" y="177" width="1026" height="841" key="SettingsEditor" timestamp="1583879916078">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="443" y="177" width="1026" height="841" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1583879916078" />
+    <state x="666" y="219" width="579" height="757" key="refactoring.ChangeSignatureDialog" timestamp="1583795812119">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="666" y="219" width="579" height="757" key="refactoring.ChangeSignatureDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1583795812119" />
+  </component>
+</project>

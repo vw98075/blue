@@ -2,23 +2,37 @@ package com.vw.blue.scrabblesolverservice;
 
 import com.vw.blue.scrabblesolverservice.config.ApplicationProperties;
 
+import com.vw.blue.scrabblesolverservice.domain.Word;
+import com.vw.blue.scrabblesolverservice.repository.WordRepository;
+import com.vw.blue.scrabblesolverservice.service.WordDataPopulationEvent;
+import com.vw.blue.scrabblesolverservice.service.WordService;
 import io.github.jhipster.config.DefaultProfileUtil;
 import io.github.jhipster.config.JHipsterConstants;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
 
 import javax.annotation.PostConstruct;
+import java.io.IOException;
 import java.net.InetAddress;
+import java.net.URISyntaxException;
 import java.net.UnknownHostException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.stream.Stream;
 
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
@@ -28,8 +42,14 @@ public class BlueApp {
 
     private final Environment env;
 
-    public BlueApp(Environment env) {
+    private WordService wordService;
+
+    private ApplicationEventPublisher applicationEventPublisher;
+
+    public BlueApp(Environment env, WordService wordService, ApplicationEventPublisher applicationEventPublisher) {
         this.env = env;
+        this.wordService = wordService;
+        this.applicationEventPublisher = applicationEventPublisher;
     }
 
     /**
@@ -94,5 +114,30 @@ public class BlueApp {
             serverPort,
             contextPath,
             env.getActiveProfiles());
+    }
+
+    @Bean
+    public CommandLineRunner loadData(WordRepository wordRepository) throws URISyntaxException, IOException {
+
+        return (args) -> {
+
+            wordService.purge();
+
+            Path path = Paths.get(getClass().getClassLoader()
+                .getResource("words.txt").toURI());
+
+            Stream<String> lines = Files.lines(path);
+            lines
+                .filter(value -> value != null && value.length() > 0)
+                .distinct()
+                .forEach(word -> wordService.save(new Word(word.trim())));
+            lines.close();
+
+            log.info("-------------------------------");
+            long total = wordRepository.count();
+            log.info("The total words: {}", total);
+
+            applicationEventPublisher.publishEvent(new WordDataPopulationEvent(this, "Word data populish is completed with a total of " + total + " data entries"));
+        };
     }
 }

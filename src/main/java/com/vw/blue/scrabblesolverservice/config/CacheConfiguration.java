@@ -41,6 +41,7 @@ public class CacheConfiguration {
             createCache(cm, com.vw.blue.scrabblesolverservice.domain.User.class.getName());
             createCache(cm, com.vw.blue.scrabblesolverservice.domain.Authority.class.getName());
             createCache(cm, com.vw.blue.scrabblesolverservice.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.vw.blue.scrabblesolverservice.domain.Word.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
