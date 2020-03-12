@@ -37,7 +37,7 @@ To run in the development environment:
 
 ## Application Usage
 
-Point your web browser to http://localhost:8080. On the home page, there is an application sign in instruction and the Scrabble Solver Service API access information.
+Point your web browser to http://localhost:8080 as shown on the server console. On the home page of the application, there is an instruction of Scrabble Solver Service API access.
 
 ## Memory Usage And Time Complexity Of The Algorithm
 
